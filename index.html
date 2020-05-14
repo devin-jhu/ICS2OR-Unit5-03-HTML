@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="movie rating">
+    <meta name="keywords" content="movie, rating, age">
+    <meta name="author" content="devin-jhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positive or negative</title>
+  </head>
+  <body>
+    <p>movie rating</p>
+    <p>Input your age and find out what your max movie rating is</p>
+    Number:<input type="number" id="userage"><br>
+    <button onclick="number()">find rating</button><br>
+    <script>
+      let userage;
+      function number() {
+        userage=document.getElementById("userage").value;
+        if (userage>=17) {
+          alert ("you can watch R rated movies");
+        }
+        else if (userage>=13) {
+          alert ("you can watch PG13 rated movies");
+        }
+        else if (userage<13) {
+          alert ("you can watch G or E rated movies");
+        }
+      }
+    </script>
+  </body>
+</html>
